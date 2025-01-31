@@ -1,0 +1,9 @@
+#5
+import numpy as np
+# a) Create a 3x3 matrix where each element at position (i, j) is i * j.
+matrix_a = np.outer(np.arange(3), np.arange(3))
+print(matrix_a)
+# b) Replace all elements on the main diagonal of a 4x4 matrix with 0
+matrix_b = np.ones((4, 4), dtype=int)
+np.fill_diagonal(matrix_b, 0)
+print(matrix_b)
