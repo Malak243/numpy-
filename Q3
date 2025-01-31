@@ -1,0 +1,10 @@
+#3
+import numpy as np
+arr = np.array([1,2,3,4,5,6])
+# a) Create a new array where every odd element is repeated twice
+odds_num=arr[arr% 2 != 0]
+repeated_odds = np.repeat(odds_num,2)
+print(repeated_odds)
+# b) Create a new array where elements are repeated based on their value
+repeated_values = np.repeat(arr,arr)
+print(repeated_values)
