@@ -1,0 +1,14 @@
+#1
+# a) Add a 1D array `[1, 2, 3]` to each row of a 2D array `[[10, 20, 30], [40, 50, 60]]`.
+import numpy as np 
+arr_1D=np.array([1,2,3])
+arr_2D=np.array([[10,20,30],[40,50,60]])
+result=arr_2D+arr_1D
+print(result)
+
+# b) Multiply a 2D array [[1, 2], [3, 4]] by a 1D array [10, 20] column-wise.
+import numpy as np
+arr_2D= np.array([[1, 2], [3, 4]])
+arr_1D=np.array([10, 20])
+result = arr_2D * arr_1D
+print(result)
