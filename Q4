@@ -1,0 +1,8 @@
+#4
+# a) Normalize a 1D array arr = np.array([10, 20, 30]) to have values between 0 and 1.
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+arr = np.array([10, 20, 30]).reshape(-1, 1)
+scaler = MinMaxScaler()
+normalized_arr = scaler.fit_transform(arr)
+print(normalized_arr.flatten())
