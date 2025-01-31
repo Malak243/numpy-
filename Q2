@@ -1,0 +1,12 @@
+#2
+import numpy as np
+arr = np.arange(1, 25).reshape(2, 3, 4)
+# a) Extract the second slice along axis 0
+print(arr[1])
+# b) Extract all rows and the last column for all slices
+print(arr[:, :, -1])
+# c) Reverse the order of slices along axis 0
+print(arr[::-1])
+# d) Set all even elements in the array to -1
+arr[arr % 2 == 0] = -1
+print(arr)
